@@ -8,7 +8,7 @@ echo $ZK_IP
 
 
 
-docker run --restart=unless-stopped --link -e ZOOKEEPER:$ZK_IP -p 4080:4080 --name kafka-monitor -d wpad/kafka-monitor
+docker run --restart=unless-stopped -e ZOOKEEPER:$ZK_IP -p 4080:4080 --name kafka-monitor -d wpad/kafka-monitor
 
 
 
