@@ -7,7 +7,7 @@ RUN apt-get update && \
     ca-certificates
 
 
-RUN apt-get install -y crond
+RUN apt-get install -y cron
 
 
 RUN mkdir /kafka-monitor
