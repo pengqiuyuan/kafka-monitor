@@ -16,4 +16,6 @@ ADD start.sh /start.sh
 
 EXPOSE ${KAFKA_MONITOR_PORT}
 
-CMD ["/start.sh"]
+# CMD ["/start.sh"]
+
+CMD ["crond", "-f"]
